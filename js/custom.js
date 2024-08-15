@@ -531,12 +531,21 @@ while(true){
         for(i in todos){
             str+=`[${+[i]+1}]${todos[i]}\n`
         }
-        edit=parseInt(prompt(str+"\n Enter Number For Edit Task"));
-        update=(prompt("\n Enter username for edit \n Enter phone.no for edit"));
-        todos[i-1]=update
+        if (username || phoneNumber) {
+            let editChoice = prompt("1. Edit username\n2. Edit phone number");
+            if (editChoice === '1') {
+                username = prompt("Enter new username:");
+            } else if (editChoice === '2') {
+                phoneNumber = prompt("Enter new phone number:");
+            } 
+        }
     }
     else if(choice==4){
-        
+        index=parseInt(prompt("Enter the number of the task to delete"))-1;
+        if(index >= 0 && index < todos.length){
+            todos.splice(index,1);
+            alert("task deleted")
+        }
     }
     else if(choice==5){
         break;
