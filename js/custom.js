@@ -508,49 +508,100 @@ console.log(y);
 
 
 
-let todos=[];
+// let todos=[];
 
-while(true){
-    choice=parseInt(prompt("[1] Add todo \n [2] Display Todo \n [3] Edit Todo \n [4] Delete Todo  \n [5] Exit"));
+// while(true){
+//     choice=parseInt(prompt("[1] Add todo \n [2] Display Todo \n [3] Edit Todo \n [4] Delete Todo  \n [5] Exit"));
 
-    if(choice===1){
-        let username=prompt("Enter the username");
-        let pno=prompt("Enter phone number");
-        todos.push({username,pno});
+//     if(choice===1){
+//         let username=prompt("Enter the username");
+//         let pno=prompt("Enter phone number");
+//         todos.push({username,pno});
+//     }
+//     else if(choice==2){
+//         let str=``
+//         for(i=0; i<todos.length;i++){
+//             str+=`[${i+1}] username:${todos[i].username}
+//             pno:${todos[i].pno}\n`
+//         }
+//         alert(str);
+//     }
+//     else if(choice==3){
+//         str=``
+//         for(i in todos){
+//             str+=`[${+[i]+1}]${todos[i]}\n`
+//         }
+//         if (username || phoneNumber) {
+//             let editChoice = prompt("1. Edit username\n2. Edit phone number");
+//             if (editChoice === '1') {
+//                 username = prompt("Enter new username:");
+//             } else if (editChoice === '2') {
+//                 phoneNumber = prompt("Enter new phone number:");
+//             } 
+//         }
+//     }
+//     else if(choice==4){
+//         index=parseInt(prompt("Enter the number of the task to delete"))-1;
+//         if(index >= 0 && index < todos.length){
+//             todos.splice(index,1);
+//             alert("task deleted")
+//         }
+//     }
+//     else if(choice==5){
+//         break;
+//     }
+//     else{
+//         alert("invalid")
+//     }
+// }
+
+// aug 16
+
+// function btnEvent(e){
+//     console.log(e.value);
+//     if(e.value==""){
+//         alert("Empty Data")
+//     }
+//     else{
+//         const value=parseInt(e.value);
+//         document.getElementById("out").textContent=value**2
+//     }
+// }
+
+function add(){
+    const a=parseInt(document.getElementById("fno").value)
+    const b=parseInt(document.getElementById("sno").value)
+    document.getElementById("sum").textContent=a+b;
+    
+}
+
+function sub(){
+    const a=parseInt(document.getElementById("fno").value)
+    const b=parseInt(document.getElementById("sno").value)
+    document.getElementById("difference").textContent=a-b;
+    
+}
+
+function mul(){
+    const a=parseInt(document.getElementById("fno").value)
+    const b=parseInt(document.getElementById("sno").value)
+    document.getElementById("product").textContent=a*b;
+    
+}
+
+function div(){
+    const a=parseInt(document.getElementById("fno").value)
+    const b=parseInt(document.getElementById("sno").value)
+    document.getElementById("result").textContent=a/b;
+    
+}
+
+
+function table(){
+    let a=parseInt(document.getElementById("num").value)
+    str=``
+    for(i=1;i<=10;i++){
+        str+=`<h1>${i} x ${a} = ${i*a}</h1>`
     }
-    else if(choice==2){
-        let str=``
-        for(i=0; i<todos.length;i++){
-            str+=`[${i+1}] username:${todos[i].username}
-            pno:${todos[i].pno}\n`
-        }
-        alert(str);
-    }
-    else if(choice==3){
-        str=``
-        for(i in todos){
-            str+=`[${+[i]+1}]${todos[i]}\n`
-        }
-        if (username || phoneNumber) {
-            let editChoice = prompt("1. Edit username\n2. Edit phone number");
-            if (editChoice === '1') {
-                username = prompt("Enter new username:");
-            } else if (editChoice === '2') {
-                phoneNumber = prompt("Enter new phone number:");
-            } 
-        }
-    }
-    else if(choice==4){
-        index=parseInt(prompt("Enter the number of the task to delete"))-1;
-        if(index >= 0 && index < todos.length){
-            todos.splice(index,1);
-            alert("task deleted")
-        }
-    }
-    else if(choice==5){
-        break;
-    }
-    else{
-        alert("invalid")
-    }
+    document.getElementById("out").innerHTML=str
 }
