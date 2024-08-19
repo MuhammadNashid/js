@@ -319,47 +319,47 @@
 // console.log(fib(10));
 
 
-let str=" a b c d e f "
+// let str=" a b c d e f "
 
-console.log(str.length);
-console.log(str.toUpperCase());
-console.log(str.toLocaleLowerCase());
-console.log(str.trim());
-console.log(str.trimStart());
-console.log(str.trimEnd());
-console.log(str.substring(0,7));
-console.log(str.replace("Hello","Hai"));
-console.log(str.startsWith(" a b "));
-console.log(str.endsWith(" "));
-x=str.split(" ")
-console.log(x);
-y=x.join(" ")
-console.log(y);
+// console.log(str.length);
+// console.log(str.toUpperCase());
+// console.log(str.toLocaleLowerCase());
+// console.log(str.trim());
+// console.log(str.trimStart());
+// console.log(str.trimEnd());
+// console.log(str.substring(0,7));
+// console.log(str.replace("Hello","Hai"));
+// console.log(str.startsWith(" a b "));
+// console.log(str.endsWith(" "));
+// x=str.split(" ")
+// console.log(x);
+// y=x.join(" ")
+// console.log(y);
 
 
 
-let a=[1,2,"hello","a","n",true,false]
-console.log(a);
-for(i=0;i<a.length;i++){
-    console.log(a[i]);
-}
-for(i in a){
-    console.log(a[i]);
-}
-console.log(a[5]);
-console.log(a.length);
-console.log(a.join(" "));
-console.log(a.indexOf("n"));
-a.push("good");
-console.log(a);
-a.pop();
-console.log(a);
-a.shift;
-console.log(a);
-a.splice(a.indexOf("a"),6)
-console.log(a);
-a[a.indexOf(false)]=7
-console.log(a);
+// let a=[1,2,"hello","a","n",true,false]
+// console.log(a);
+// for(i=0;i<a.length;i++){
+//     console.log(a[i]);
+// }
+// for(i in a){
+//     console.log(a[i]);
+// }
+// console.log(a[5]);
+// console.log(a.length);
+// console.log(a.join(" "));
+// console.log(a.indexOf("n"));
+// a.push("good");
+// console.log(a);
+// a.pop();
+// console.log(a);
+// a.shift;
+// console.log(a);
+// a.splice(a.indexOf("a"),6)
+// console.log(a);
+// a[a.indexOf(false)]=7
+// console.log(a);
 
 
 
@@ -384,38 +384,38 @@ console.log(a);
 // }
 
 
-let num=[1,8,9,6,7,4,75,2,,3,10]
-let b=num[0];
-for(i=1;i<num.length;i++){
-    // console.log(i);
-    if(num[i]>b){
-        b=num[i];
-    }
-}
-console.log(b);
+// let num=[1,8,9,6,7,4,75,2,,3,10]
+// let b=num[0];
+// for(i=1;i<num.length;i++){
+//     // console.log(i);
+//     if(num[i]>b){
+//         b=num[i];
+//     }
+// }
+// console.log(b);
 
 
-ob=[
-    {name:"abin",age:20,class:"degree",mark:50},
-    {name:"avin",age:20,class:"degree",mark:50},
-    {name:"alan",age:20,class:"degree",mark:50},
-];
-console.log(ob[0].name);
+// ob=[
+//     {name:"abin",age:20,class:"degree",mark:50},
+//     {name:"avin",age:20,class:"degree",mark:50},
+//     {name:"alan",age:20,class:"degree",mark:50},
+// ];
+// console.log(ob[0].name);
 
-for(i in ob){
-    console.log(ob[i].name);
-}
+// for(i in ob){
+//     console.log(ob[i].name);
+// }
 
-ob=[
-    {name:"aswin",age:20,class:"degree",mark:50},
-    {name:"avin",age:20,class:"degree",mark:50},
-    {name:"abu",age:20,class:"degree",mark:50},
-];
-x=JSON.stringify(ob)
-console.log(x);
+// ob=[
+//     {name:"aswin",age:20,class:"degree",mark:50},
+//     {name:"avin",age:20,class:"degree",mark:50},
+//     {name:"abu",age:20,class:"degree",mark:50},
+// ];
+// x=JSON.stringify(ob)
+// console.log(x);
 
-y=JSON.parse(x)
-console.log(y);
+// y=JSON.parse(x)
+// console.log(y);
 
 
 
@@ -568,40 +568,157 @@ console.log(y);
 //     }
 // }
 
-function add(){
-    const a=parseInt(document.getElementById("fno").value)
-    const b=parseInt(document.getElementById("sno").value)
-    document.getElementById("sum").textContent=a+b;
+// function add(){
+//     const a=parseInt(document.getElementById("fno").value)
+//     const b=parseInt(document.getElementById("sno").value)
+//     document.getElementById("sum").textContent=a+b;
     
-}
+// }
 
-function sub(){
-    const a=parseInt(document.getElementById("fno").value)
-    const b=parseInt(document.getElementById("sno").value)
-    document.getElementById("difference").textContent=a-b;
+// function sub(){
+//     const a=parseInt(document.getElementById("fno").value)
+//     const b=parseInt(document.getElementById("sno").value)
+//     document.getElementById("difference").textContent=a-b;
     
-}
+// }
 
-function mul(){
-    const a=parseInt(document.getElementById("fno").value)
-    const b=parseInt(document.getElementById("sno").value)
-    document.getElementById("product").textContent=a*b;
+// function mul(){
+//     const a=parseInt(document.getElementById("fno").value)
+//     const b=parseInt(document.getElementById("sno").value)
+//     document.getElementById("product").textContent=a*b;
     
-}
+// }
 
-function div(){
-    const a=parseInt(document.getElementById("fno").value)
-    const b=parseInt(document.getElementById("sno").value)
-    document.getElementById("result").textContent=a/b;
+// function div(){
+//     const a=parseInt(document.getElementById("fno").value)
+//     const b=parseInt(document.getElementById("sno").value)
+//     document.getElementById("result").textContent=a/b;
     
-}
+// }
 
 
-function table(){
-    let a=parseInt(document.getElementById("num").value)
-    str=``
-    for(i=1;i<=10;i++){
-        str+=`<h1>${i} x ${a} = ${i*a}</h1>`
-    }
-    document.getElementById("out").innerHTML=str
-}
+// function table(){
+//     let a=parseInt(document.getElementById("num").value)
+//     str=``
+//     for(i=1;i<=10;i++){
+//         str+=`<h1>${i} x ${a} = ${i*a}</h1>`
+//     }
+//     document.getElementById("out").innerHTML=str
+// }
+
+
+
+// let main=[]
+
+// function getdata(){
+//     str=``
+//     for(i in main){
+//         str+=`<li>${main[i]} <button onclick="del(${i})">delete</button></li>`
+//     }
+//     document.getElementById("out").innerHTML=str
+//     document.getElementById("list").value=""
+// }
+
+// function add(){
+//     let a=document.getElementById("list").value
+//     main.push(a)
+// getdata()
+
+
+
+
+// }
+
+
+// function del(index){
+//     console.log(index);
+//     main.splice(index,1)
+//     getdata()
+// }
+
+
+
+// document.getElementById("name").addEventListener("keyup",(e)=>{
+//     console.log(e.target.value);
+// })
+
+// console.log(Math.sqrt(9));
+// console.log(Math.round(10.5));
+// console.log(Math.ceil(10.1));
+// console.log(Math.floor(10.9));
+// console.log(Math.abs(90));
+// console.log(Math.PI);
+// console.log(Math.max(10,3,80,90,100,200));
+// console.log(Math.min(6,40,70,50,10,30));
+// console.log(Math.pow(2,4));
+
+
+
+// let otp="";
+// for(i=1;i<=4;i++){
+//     otp+=Math.floor(Math.random()*10);
+// }
+// console.log(+otp);
+
+
+// console.log("Start");
+// for(i=0;i<=10;i++){
+//     console.log(i);
+// }
+// console.log("End");
+
+
+
+
+// console.log("Start");
+// setTimeout(() => {
+//     for(i=0;i<=10;i++){
+//         console.log(i);
+//     }
+// }, 3000);
+// console.log("End");
+
+
+// i=1;
+
+// x=setInterval(() => {
+//     document.write(i)
+//     if(i==10){
+//         clearInterval(x)
+//     }
+//     i+=1;
+// },1000);
+
+
+// i=1
+
+// function asd(){
+//     console.log("Hai");
+//     i++
+//     if(i<=10){
+//         asd()
+//     }
+
+
+
+// } 
+
+
+// asd()
+
+
+i=1
+
+function asd(){
+    setTimeout(()=>{
+        document.write("*")
+        if(i<=10){
+            asd()
+        }
+        i++
+    },1000)
+
+} 
+
+asd()
+
