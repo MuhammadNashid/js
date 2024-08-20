@@ -1,0 +1,10 @@
+if (username || phoneNumber) {
+                            let editChoice = prompt("1. Edit username\n2. Edit phone number\nSelect an option:");
+                            if (editChoice === '1') {
+                                username = prompt("Enter new username:");
+                            } else if (editChoice === '2') {
+                                phoneNumber = prompt("Enter new phone number:");
+                            } else {
+                                alert("Invalid choice");
+                            }
+                        }
