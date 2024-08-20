@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+
+#asd{
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    border: 15px groove brown;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 300px 300px;
+    font-size: 90px;
+
+}
