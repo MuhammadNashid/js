@@ -737,3 +737,80 @@ i=1
 // }  
 // asd()
 
+// spread operator
+
+// ob={name:"alan",age:20}
+// c={...ob}
+// c.name="amal"
+// console.log(ob);
+// console.log(c);
+
+
+// objDestructuring//
+
+    // obj={name:"Nashid",exp:1,des:"Mern"}
+    // let{name,exp,des}=obj
+    // console.log(name,exp,des);
+
+    //Array destructre//
+
+    // x=[1,2,3,4,5,6,7]
+    // let[a,b,c,,e,f,g]=x
+    // console.log(a,b,c,e,f,g);
+
+    // nestedDestructure
+
+    // obj={name:"Nashid",exp:1,des:"Mern",breaktime:{mng:15,noon:45,evng:15}}
+    // let{name,exp,des,breaktime:{mng,noon,evng}}=obj
+    // console.log(name,exp,des,mng,noon,evng);
+
+
+    // console.log("start");
+
+    // function asd(){
+    //     console.log("asd function");
+    // }
+
+
+    // callbackFunction
+
+    // function bsd(callback){
+    //    setTimeout(()=>{
+    //     console.log("bsd function");
+    //     callback()
+    //    },2000);
+    // }
+    
+
+    // bsd(asd)
+
+    // console.log("end");
+
+                // map
+//     a=[
+//         {name:"Nashid",age:20,class:12},
+//         {name:"Aswin",age:20,class:12},
+//         {name:"Abin",age:20,class:12},
+//         {name:"Athila",age:20,class:12},
+//         {name:"Amal",age:20,class:12},
+//         {name:"Alan",age:20,class:12},
+//         {name:"Avin",age:20,class:12},
+//         {name:"Aleena",age:20,class:12},
+//         {name:"Jaimon",age:20,class:12},
+//         {name:"Ramees",age:20,class:12},
+//     ]
+
+//    x= a.map(data => {
+//         console.log(data);
+//     });
+
+
+    ob={name:"Nashid",age:21,class:"mern"}
+    b={...ob}
+    b.name="Athila"
+    console.log(ob);
+    console.log(b);    
+
+    Obj={name:"Athila",age:20,des:"Mern"}
+    let{name,age,des}=Obj
+    console.log(name,age,des);
