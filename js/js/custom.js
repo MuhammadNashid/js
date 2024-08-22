@@ -618,18 +618,11 @@
 //     document.getElementById("out").innerHTML=str
 //     document.getElementById("list").value=""
 // }
-
 // function add(){
 //     let a=document.getElementById("list").value
 //     main.push(a)
 // getdata()
-
-
-
-
-// }
-
-
+//  }
 // function del(index){
 //     console.log(index);
 //     main.splice(index,1)
@@ -707,7 +700,7 @@
 // asd()
 
 
-i=1
+// i=1
 
 // function asd(){
 //     setTimeout(()=>{
@@ -805,12 +798,39 @@ i=1
 //     });
 
 
-    ob={name:"Nashid",age:21,class:"mern"}
-    b={...ob}
-    b.name="Athila"
-    console.log(ob);
-    console.log(b);    
+    // ob={name:"Nashid",age:21,class:"mern"}
+    // b={...ob}
+    // b.name="Athila"
+    // console.log(ob);
+    // console.log(b);    
 
-    Obj={name:"Athila",age:20,des:"Mern"}
-    let{name,age,des}=Obj
-    console.log(name,age,des);
+    // Obj={name:"Athila",age:20,des:"Mern"}
+    // let{name,age,des}=Obj
+    // console.log(name,age,des);
+
+
+    a=[
+                {name:"Nashid",age:20,class:12},
+                {name:"Aswin",age:20,class:12},
+                {name:"Abin",age:20,class:12},
+                {name:"Athila",age:20,class:12},
+                {name:"Amal",age:20,class:12},
+                {name:"Nashid",age:10,class:12},
+    ]
+    // let x=a.find((data)=>{
+    //     return data.name=="Nashid"
+    // })
+    // console.log(x);
+
+    // let x=a.filter((data)=>{
+    //     return data.name=="Nashid"
+    // })
+    // console.log(x);
+
+    // let x=a.reduce((total,dt)=>{
+    //     return total+dt.age
+    // },0)
+    // console.log(x);
+
+    
+
