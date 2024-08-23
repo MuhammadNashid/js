@@ -832,5 +832,59 @@
     // },0)
     // console.log(x);
 
-    
+//     x={
+//         a:10,
+//         b:20,
+//         c:function(){
+//             console.log("this is function");
+//             console.log(this);
+            
+            
+//         }
+//     }
+//    var y=x.c;
+//     y.call(x)
+//     y=x.c.bind(x)
+//     y()
+//   console.log(x.c());
+
+// x={
+//     a:10,b:20
+// }
+//   y={
+//     c:function(){
+//         console.log(this.a+this.b);
+        
+//     }
+//   }
+//   z=y.c
+//   z.call(x)
+
+
+class Car{
+    name="Ritz"
+    wheel=4
+    color="white"
+    fuel="Petrol"
+
+
+
+
+    startEngine(){
+        console.log("Engine Started");
+        console.log("Car is moving");
+        
+        
+    }
+    stopEngine(){
+        console.log("Stop Engine");
+        
+    }
+
+}
+ritz=new Car()
+console.log(ritz.fuel);
+console.log(ritz.color);
+console.log(ritz.wheel);
+
 
