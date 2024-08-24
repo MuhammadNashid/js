@@ -861,30 +861,30 @@
 //   z.call(x)
 
 
-class Car{
-    name="Ritz"
-    wheel=4
-    color="white"
-    fuel="Petrol"
+// class Car{
+//     name="Ritz"
+//     wheel=4
+//     color="white"
+//     fuel="Petrol"
 
 
 
 
-    startEngine(){
-        console.log("Engine Started");
-        console.log("Car is moving");
+//     startEngine(){
+//         console.log("Engine Started");
+//         console.log("Car is moving");
         
         
-    }
-    stopEngine(){
-        console.log("Stop Engine");
+//     }
+//     stopEngine(){
+//         console.log("Stop Engine");
         
-    }
+//     }
 
-}
-ritz=new Car()
-console.log(ritz.fuel);
-console.log(ritz.color);
-console.log(ritz.wheel);
+// }
+// ritz=new Car()
+// console.log(ritz.fuel);
+// console.log(ritz.color);
+// console.log(ritz.wheel);
 
 

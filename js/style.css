@@ -1,16 +1,23 @@
-/* body{
-    background-color: black;
+ body{
+    background-color: brown;
+    color: aliceblue;
+} 
+
+#text{
+    padding: 15px;
 }
 
-#asd{
-    display: flex;
-    color: aliceblue;
-    justify-content: center;
-    align-items: center;
-    border: 15px groove brown;
-    border-radius: 20px;
-    padding: 40px;
-    margin: 300px 300px;
-    font-size: 90px;
 
-} */
+
+#num{
+    padding: 15px;
+}
+
+
+
+#add{
+    padding: 8px;
+    border: 2px groove dodgerblue ;
+    color: darkred;
+}
+
