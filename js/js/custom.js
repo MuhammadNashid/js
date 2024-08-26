@@ -633,7 +633,7 @@
 
 // document.getElementById("name").addEventListener("keyup",(e)=>{
 //     console.log(e.target.value);
-// })
+// });
 
 // console.log(Math.sqrt(9));
 // console.log(Math.round(10.5));
@@ -809,14 +809,14 @@
     // console.log(name,age,des);
 
 
-    a=[
-                {name:"Nashid",age:20,class:12},
-                {name:"Aswin",age:20,class:12},
-                {name:"Abin",age:20,class:12},
-                {name:"Athila",age:20,class:12},
-                {name:"Amal",age:20,class:12},
-                {name:"Nashid",age:10,class:12},
-    ]
+    // a=[
+    //             {name:"Nashid",age:20,class:12},
+    //             {name:"Aswin",age:20,class:12},
+    //             {name:"Abin",age:20,class:12},
+    //             {name:"Athila",age:20,class:12},
+    //             {name:"Amal",age:20,class:12},
+    //             {name:"Nashid",age:10,class:12},
+    // ]
     // let x=a.find((data)=>{
     //     return data.name=="Nashid"
     // })
@@ -886,5 +886,60 @@
 // console.log(ritz.fuel);
 // console.log(ritz.color);
 // console.log(ritz.wheel);
+
+
+
+class vehicle{
+    constructor(){
+        this.fuel=this.fuel
+    }
+
+
+    startEngine(){
+                console.log("Engine Started"+this.fuel);
+                
+                
+                
+            }
+            stopEngine(){
+                console.log("Stop Engine");
+                
+            }
+}
+
+ritz=new vehicle("deisel")
+ritz.stopEngine()
+
+
+
+class button{
+    constructor(name){
+        this.button=document.createElement("button");
+        this.button.innerHTML=name;
+        document.body.appendChild(this.button);
+    }
+
+    set Height(height){
+        this.button.style.height=height+"px"
+    }
+
+    set Width(width){
+        this.button.style.width=width+"px"
+    }
+
+    get height(){
+        return parseInt(this.button.style.height)
+    }
+
+    get width(){
+        return parseInt(this.button.style.width)
+    }
+}
+
+btn1=new button("Click Me")
+btn1.Height=100
+btn1.Width=100
+
+console.log(btn1.height,btn1.width);
 
 
