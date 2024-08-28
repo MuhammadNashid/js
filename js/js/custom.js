@@ -889,57 +889,204 @@
 
 
 
-class vehicle{
-    constructor(){
-        this.fuel=this.fuel
+// class vehicle{
+//     constructor(){
+//         this.fuel=this.fuel
+//     }
+
+
+//     startEngine(){
+//                 console.log("Engine Started"+this.fuel);
+                
+                
+                
+//             }
+//             stopEngine(){
+//                 console.log("Stop Engine");
+                
+//             }
+// }
+
+// ritz=new vehicle("deisel")
+// ritz.stopEngine()
+
+
+
+// class button{
+//     constructor(name){
+//         this.button=document.createElement("button");
+//         this.button.innerHTML=name;
+//         document.body.appendChild(this.button);
+//     }
+
+//     set Height(height){
+//         this.button.style.height=height+"px"
+//     }
+
+//     set Width(width){
+//         this.button.style.width=width+"px"
+//     }
+
+//     get height(){
+//         return parseInt(this.button.style.height)
+//     }
+
+//     get width(){
+//         return parseInt(this.button.style.width)
+//     }
+// }
+
+// btn1=new button("Click Me")
+// btn1.Height=100
+// btn1.Width=100
+
+// console.log(btn1.height,btn1.width);
+
+// class Father{
+//     farmer(){
+//         console.log("He is Farmer");
+        
+//     }
+//     thikHair(){
+//         console.log("He have thik Hair");
+        
+//     }
+//     Handsome(){
+//         console.log("His looking like a handsome");
+        
+//     }
+// }
+
+// class Child extends Father{
+//     engineer(){
+//         console.log("He is engineering student");
+        
+//     }
+// }
+
+// let nashi = new Child()
+
+// nashi.engineer()
+// nashi.Handsome()
+
+// using constructor
+
+// class Father{
+//     constructor(name){
+//         this.name=name;
+//     }
+//     farmer(){
+//         console.log("He is farmer");
+        
+//     }
+//     Handsome(){
+//         console.log("He is looking like Handsome");
+        
+//     }
+
+// }
+
+// class Child extends Father{
+//     constructor(name,age){
+//         super(name)
+//         this.age=age;
+//     }
+//     engineer(){
+//         console.log("He is engineer" + this.name + this.age);
+        
+//     }
+// }
+
+
+// let namshi=new Child("Nashid",21)
+
+// namshi.engineer()
+// namshi.Handsome()
+
+
+// class GrandFather{
+//     farmer(){
+//         console.log("He is a farmer");
+        
+//     }
+// }
+
+// class Father extends GrandFather{
+//     handsome(){
+//         console.log("He is looking like Handsome");
+        
+//     }
+// }
+
+// class Child extends Father{
+//     engineer(){
+//         console.log("He is engineer");
+        
+//     }
+// }
+
+// ob=new Child()
+// ob.farmer()
+// ob.handsome()
+// ob.engineer()
+
+
+
+class Father{
+    business(){
+        console.log("He have business");
+        
     }
-
-
-    startEngine(){
-                console.log("Engine Started"+this.fuel);
-                
-                
-                
-            }
-            stopEngine(){
-                console.log("Stop Engine");
-                
-            }
+    handsome(){
+        console.log("he is very handsome");
+        
+    }
+    thikHair(){
+        console.log("He have a thik hair");
+        
+    }
+    cooking(){
+        console.log("he cooking in the house");
+        
+    }
+    helping(){
+        console.log("He helping in the house");
+        
+    }
 }
 
-ritz=new vehicle("deisel")
-ritz.stopEngine()
-
-
-
-class button{
-    constructor(name){
-        this.button=document.createElement("button");
-        this.button.innerHTML=name;
-        document.body.appendChild(this.button);
+class Boy extends Father{
+    business(){
+        console.log("He have business");
+        
     }
-
-    set Height(height){
-        this.button.style.height=height+"px"
+    handsome(){
+        console.log("he is very handsome");
+        
     }
-
-    set Width(width){
-        this.button.style.width=width+"px"
-    }
-
-    get height(){
-        return parseInt(this.button.style.height)
-    }
-
-    get width(){
-        return parseInt(this.button.style.width)
+    thikHair(){
+        console.log("He have a thik hair");
+        
     }
 }
 
-btn1=new button("Click Me")
-btn1.Height=100
-btn1.Width=100
+class Girl extends Father{
+    cooking(){
+        console.log("he cooking in the house");
+        
+    }
+    helping(){
+        console.log("He helping in the house");
+        
+    }
+}
 
-console.log(btn1.height,btn1.width);
+ob=new Boy()
+ob.business()
+ob.handsome()
+ob.thikHair()
 
 
+ob=new Girl()
+ob.cooking()
+ob.helping()

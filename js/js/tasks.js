@@ -63,3 +63,14 @@
 
 
 
+
+
+// inhertance
+
+
+// class Vehicle{
+//     make(){
+//         console.log("");
+        
+//     }
+// }
