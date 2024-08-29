@@ -1032,61 +1032,122 @@
 
 
 
-class Father{
-    business(){
-        console.log("He have business");
+// class Father{
+//     business(){
+//         console.log("He have business");
+        
+//     }
+//     handsome(){
+//         console.log("he is very handsome");
+        
+//     }
+//     thikHair(){
+//         console.log("He have a thik hair");
+        
+//     }
+//     cooking(){
+//         console.log("he cooking in the house");
+        
+//     }
+//     helping(){
+//         console.log("He helping in the house");
+        
+//     }
+// }
+
+// class Boy extends Father{
+//     business(){
+//         console.log("He have business");
+        
+//     }
+//     handsome(){
+//         console.log("he is very handsome");
+        
+//     }
+//     thikHair(){
+//         console.log("He have a thik hair");
+        
+//     }
+// }
+
+// class Girl extends Father{
+//     cooking(){
+//         console.log("he cooking in the house");
+        
+//     }
+//     helping(){
+//         console.log("He helping in the house");
+        
+//     }
+// }
+
+// ob=new Boy()
+// ob.business()
+// ob.handsome()
+// ob.thikHair()
+
+
+// ob=new Girl()
+// ob.cooking()
+// ob.helping()
+
+
+
+// bank Acoount
+
+class Bankaccount{
+
+    constructor(balance,deposite,withdraw){
+        this._balance=balance
+        this._deposite=deposite
+        this._withdraw=withdraw
+       
+    }
+    checkBalance(){
+       return (`My balance ${this._balance}`);
+       
+    }
+    deposite(){
+        return (`deposite to BankAccount ${this._deposite}`);
         
     }
-    handsome(){
-        console.log("he is very handsome");
+    getbalance(currentbalance){
+        return currentbalance-this._withdraw
+       
+        
         
     }
-    thikHair(){
-        console.log("He have a thik hair");
-        
-    }
-    cooking(){
-        console.log("he cooking in the house");
-        
-    }
-    helping(){
-        console.log("He helping in the house");
+    withdraw(){
+        return (` iam withdraw in my account ${this._withdraw}`);
         
     }
 }
+const myBank=new Bankaccount("0", "5000", "1000")
+console.log(myBank.checkBalance());
+console.log(myBank.deposite());
+console.log(myBank.withdraw());
+console.log(myBank.getbalance(5000));
 
-class Boy extends Father{
-    business(){
-        console.log("He have business");
-        
-    }
-    handsome(){
-        console.log("he is very handsome");
-        
-    }
-    thikHair(){
-        console.log("He have a thik hair");
-        
+
+
+class Animal{
+    speack(){
+        console.log("Animal make sound");     
     }
 }
-
-class Girl extends Father{
-    cooking(){
-        console.log("he cooking in the house");
-        
-    }
-    helping(){
-        console.log("He helping in the house");
-        
+class Dog extends Animal{
+    speack(){
+        console.log("Dog is bark");   
     }
 }
-
-ob=new Boy()
-ob.business()
-ob.handsome()
-ob.thikHair()
-
-
-ob=new Girl()
-ob.cooking()
-ob.helping()
+class Cat extends Animal{
+    speack(){
+        console.log("Cat is meow");        
+    }
+}
+a=new Animal()
+b=new Dog()
+c=new Cat()
+a.speack()
+b.speack()
+c.speack()

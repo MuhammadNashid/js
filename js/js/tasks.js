@@ -62,15 +62,81 @@
 // }
 
 
+// Vehicle
+
+// class Vehicle {
+//     constructor(make, model) {
+//       this.make = make;
+//       this.model = model;
+//     }
+//     startEngine() {
+//       console.log("Engine started");
+//     }
+//   }
+//   class Car extends Vehicle {
+//     constructor(make, model, doors) {
+//       super(make, model); 
+//       this.doors = doors;
+//     }
+//     honkHorn() {
+//       console.log("Beep beep!");
+//     }
+//   }
+//   const myCar = new Car('Toyota', 'Camry', 4);
+  
+//   myCar.startEngine(); 
+//   myCar.honkHorn();  
 
 
+//   student or person
 
-// inhertance
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
 
-
-// class Vehicle{
-//     make(){
-//         console.log("");
-        
+//     introduce() {
+//         console.log(`Hello, my name is ${this.name}`);
 //     }
 // }
+// class Student extends Person {
+//     constructor(name, subject) {
+//         super(name); 
+//         this.subject = subject;
+//     }
+
+//     study() {
+//         console.log(`I am studying ${this.subject}`);
+//     }
+// }
+// const student = new Student("Athila", "Mathematics");
+
+
+// student.introduce();
+// student.study();
+
+
+        // employeee
+
+// class Employee {
+//     constructor(name, position) {
+//         this.name = name;
+//         this.position = position;
+//     }
+//     describe() {
+//         console.log(`I am ${this.name} and I work as a ${this.position}`);
+//     }
+// }
+// class Manager extends Employee {
+//     constructor(name, position, department) {
+//         super(name, position); 
+//         this.department = department;
+//     }
+
+//     describe() {
+//         super.describe();
+//         console.log(`I am also the manager of the ${this.department} department`);
+//     }
+// }
+// let manager = new Manager("Nashid", "Project Head", "Engineering");
+// manager.describe();
