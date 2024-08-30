@@ -1095,59 +1095,132 @@
 
 // bank Acoount
 
-class Bankaccount{
+// class Bankaccount{
 
-    constructor(balance,deposite,withdraw){
-        this._balance=balance
-        this._deposite=deposite
-        this._withdraw=withdraw
+//     constructor(balance,deposite,withdraw){
+//         this._balance=balance
+//         this._deposite=deposite
+//         this._withdraw=withdraw
        
-    }
-    checkBalance(){
-       return (`My balance ${this._balance}`);
+//     }
+//     checkBalance(){
+//        return (`My balance ${this._balance}`);
        
-    }
-    deposite(){
-        return (`deposite to BankAccount ${this._deposite}`);
+//     }
+//     deposite(){
+//         return (`deposite to BankAccount ${this._deposite}`);
         
-    }
-    getbalance(currentbalance){
-        return currentbalance-this._withdraw
+//     }
+//     getbalance(currentbalance){
+//         return currentbalance-this._withdraw
        
         
         
-    }
-    withdraw(){
-        return (` iam withdraw in my account ${this._withdraw}`);
+//     }
+//     withdraw(){
+//         return (` iam withdraw in my account ${this._withdraw}`);
         
-    }
-}
-const myBank=new Bankaccount("0", "5000", "1000")
-console.log(myBank.checkBalance());
-console.log(myBank.deposite());
-console.log(myBank.withdraw());
-console.log(myBank.getbalance(5000));
+//     }
+// }
+// const myBank=new Bankaccount("0", "5000", "1000")
+// console.log(myBank.checkBalance());
+// console.log(myBank.deposite());
+// console.log(myBank.withdraw());
+// console.log(myBank.getbalance(5000));
 
 
 
-class Animal{
-    speack(){
-        console.log("Animal make sound");     
-    }
-}
-class Dog extends Animal{
-    speack(){
-        console.log("Dog is bark");   
-    }
-}
-class Cat extends Animal{
-    speack(){
-        console.log("Cat is meow");        
-    }
-}
-a=new Animal()
-b=new Dog()
-c=new Cat()
-a.speack()
-b.speack()
-c.speack()
+// class Animal{
+//     speack(){
+//         console.log("Animal make sound");     
+//     }
+// }
+// class Dog extends Animal{
+//     speack(){
+//         console.log("Dog is bark");   
+//     }
+// }
+// class Cat extends Animal{
+//     speack(){
+//         console.log("Cat is meow");        
+//     }
+// }
+// a=new Animal()
+// b=new Dog()
+// c=new Cat()
+// a.speack()
+// b.speack()
+// c.speack()
+
+
+// console.log("Start");
+
+// try {
+//     a=40
+//     b= 20
+//     c=a+b
+//     console.log(c);
+    
+// } catch (error) {
+//     console.log("please enter proper number");
+// }
+// finally{
+//     console.log("This is final message");
+    
+// }
+
+// console.log("End");
+
+
+// function orderFood(callback){
+//     setTimeout(()=>{
+//         console.log("Food Ordered");
+//         callback();
+//     },2000);
+// }
+// function decorateVenue(callback){
+//     setTimeout(()=>{
+//         console.log("Venue Decorated");
+//         callback();
+//     },2000);
+// }
+// function arrangeDJ(callback){
+//     setTimeout(()=>{
+//         console.log("DJ Arranged");
+//         callback();
+//     },2000);
+// }
+
+// orderFood(()=>{
+//     decorateVenue(()=>{
+//         arrangeDJ(()=>{
+//             console.log("All Task Are Completed");  
+//         });
+//     });
+// });
+
+        // THIS IS PROMISE EXAMPLE//*
+
+// function fetchData(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             reject("helo")
+//         },3000);
+//     });
+// }
+
+// fetchData().then((data)=>{
+//     console.log("then");
+
+//     console.log(data);
+// }).catch((error)=>{
+//     console.log("catch");
+    
+//     console.log(error);
+    
+// });
+
+     
+
+
+             
