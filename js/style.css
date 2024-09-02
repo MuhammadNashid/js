@@ -32,14 +32,27 @@ body{
     
 } */
 
-/* .photos{
+.photos{
     border: 3px solid aliceblue;
     margin: 10px;
     justify-content: center;
 }
 
 .tle{
-    height: 50px;
+    height: 100%;
+    width: 200px;
     text-align: center;
-} */
+}
 
+/* .table{
+   justify-content: top;
+    text-align: center;
+    padding: 15px;
+    
+}
+.com{
+    color: green;
+}
+.notcom{
+    color: red;
+} */

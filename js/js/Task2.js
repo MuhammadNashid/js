@@ -103,63 +103,63 @@
         // }
 
 
-        // function fetchData(){
-        //     fetch("https://jsonplaceholder.typicode.com/photos")
-        //     .then((res)=>{
-        //         return res.json();
-        //     })
+        function fetchData(){
+            fetch("https://jsonplaceholder.typicode.com/photos")
+            .then((res)=>{
+                return res.json();
+            })
 
-        //     .then((data)=>{
+            .then((data)=>{
 
 
-        //        str=`` 
+               str=`` 
 
-        //        data.map((content)=>{
-        //         str+=`
-        //         <div class="photos">
-        //         <img src="${content.url}" alt="" style="width: 350px;" "height: 200px;"><br>
-        //         <div class="tle">
-        //         ${content.title}</div>
-        //         </div>`;
-        //     })
-        //     document.getElementById("data").innerHTML=str
-        //     })
-        //     .catch((error)=>{
-        //         console.log(error);
+               data.map((content)=>{
+                str+=`
+                <div class="photos">
+                <img src="${content.url}" alt="" style="width: 350px;" "height: 200px;"><br>
+                <div class="tle">
+                ${content.title}</div>
+                </div>`;
+            })
+            document.getElementById("data").innerHTML=str
+            })
+            .catch((error)=>{
+                console.log(error);
                 
-        //     })
-        // }
+            })
+        }
 
 
 
         // TODOS//
 
 
-        function fetchData(){
-                fetch("https://jsonplaceholder.typicode.com/todos")
-                .then((res)=>{
-                    return res.json();
+        // function fetchData(){
+        //         fetch("https://jsonplaceholder.typicode.com/todos")
+        //         .then((res)=>{
+        //             return res.json();
                    
-                })
-                .then((data)=>{
-                    console.log(data);
-                    str=``
+        //         })
+        //         .then((data)=>{
+        //             console.log(data);
+        //             str=``
                     
-                    data.map((dt)=>{
-                        str+=`<tr>
-                        <td>${dt.id}</td>
-                        <td>${dt.userId}</td>
-                        <td>${dt.title}</td>
-                        <td>${dt.completed}</td>
-                    </tr>`;
-                    })
-                    document.getElementById("data").innerHTML=str
-                })
+        //             data.map((dt)=>{
+        //                 str+=`<tr>
+        //                 <td>${dt.id}</td>
+        //                 <td>${dt.userId}</td>
+        //                 <td>${dt.title}</td>
+        //                 <td>${dt.completed ?"<h6 class='com'>completed</h6>":"<h6 class='notcom'>Not completed</h6>"}</td>
+        //             </tr>`;
+        //             })
+        //             document.getElementById("data").innerHTML=str
+        //         })
 
-                .catch((error)=>{
-                    console.log(error);
+        //         .catch((error)=>{
+        //             console.log(error);
                     
-                })
+        //         })
             
-            }
+        //     }
         
