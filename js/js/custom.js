@@ -1220,7 +1220,28 @@
     
 // });
 
-     
 
+// ASYNC FUNCTION//
 
-             
+async function fetchData(){
+    try{
+       const res=await fetch("https://jsonplaceholder.typicode.com/posts")
+        const data=await res.json();
+        str=``;
+        data.map((dt)=>{
+            str+=`
+            <tr>
+             <td>${dt.id}</td>
+            <td>${dt.user}</td>
+             <td>${dt.title}</td>
+             <td>${dt.body}</td>
+         </tr>`
+        });
+        document.getElementById("data").innerHTML=str;
+    }  catch(error){
+        console.log(error);
+        
+    }
+}
+       
+           
