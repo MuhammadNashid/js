@@ -140,3 +140,39 @@
 // }
 // let manager = new Manager("Nashid", "Project Head", "Engineering");
 // manager.describe();
+
+
+        // REGULAR EXPRESION//
+
+ // (rexp=/^([0-2]\d|3[0-1])-([0]\d|1[0-2])-(\d{4})/
+
+    // console.log(rexp.test("22-09-2002"));)
+
+
+
+        
+function dob(){
+        d=document.getElementById("Date").value
+const dt=/^([0-2]\d|3[0-1])-([0]\d|1[0-2])-(\d{4})/  
+output=dt.test(d)
+str=``
+if(output){
+        str+=`
+        <h4>Date:${d}</h4>`
+        console.log("Succecfull");
+        
+}else{
+        str+=`
+        <h4>Enter Date in corret format</h4>
+        `
+        console.log("Not Succecfull");
+        
+}
+document.getElementById("data").innerHTML=str
+document.getElementById("Date").value=""
+
+}
+
+
+      
+

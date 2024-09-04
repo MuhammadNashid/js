@@ -1223,25 +1223,97 @@
 
 // ASYNC FUNCTION//
 
-async function fetchData(){
-    try{
-       const res=await fetch("https://jsonplaceholder.typicode.com/posts")
-        const data=await res.json();
-        str=``;
-        data.map((dt)=>{
-            str+=`
-            <tr>
-             <td>${dt.id}</td>
-            <td>${dt.user}</td>
-             <td>${dt.title}</td>
-             <td>${dt.body}</td>
-         </tr>`
-        });
-        document.getElementById("data").innerHTML=str;
-    }  catch(error){
-        console.log(error);
+// async function fetchData(){
+//     try{
+//        const res=await fetch("https://jsonplaceholder.typicode.com/posts")
+//         const data=await res.json();
+//         str=``;
+//         data.map((dt)=>{
+//             str+=`
+//             <tr>
+//              <td>${dt.id}</td>
+//             <td>${dt.userId}</td>
+//              <td>${dt.title}</td>
+//              <td>${dt.body}</td>
+//          </tr>`
+//         });
+//         document.getElementById("data").innerHTML=str;
+//     }  catch(error){
+//         console.log(error);
         
-    }
-}
+//     }
+// }
        
-           
+    // import add from "./exp.js";
+
+    // import * as data from "./exp.js"
+    
+    // import {add,sub} from "./exp.js"
+
+    // console.log(add(9,7));
+    // console.log(sub(6,3));
+    
+
+    // rexp=/[cbr]at/i
+
+
+    // console.log(rexp.test("Cat eat fish"));
+    // console.log(rexp.test("rat eat wheet"));
+    // console.log(rexp.test("bat eat fish"));
+
+
+
+    // rexp=/[0-9]/
+
+
+    // console.log(rexp.test("1Cat eat fish"));
+    // console.log(rexp.test("r4at eat wheet"));
+    // console.log(rexp.test("3bat eat fish"));
+
+
+
+
+    // rexp=/fish?$/
+
+
+    // console.log(rexp.test("Cat eat fish"));
+    // console.log(rexp.test("rat eat wheet"));
+    // console.log(rexp.test("bat eat fish"));
+
+
+    // rexp=/fish.*$/
+
+
+    // console.log(rexp.test("Cat eat fishs"));
+    // console.log(rexp.test("rat eat wheet"));
+    // console.log(rexp.test("bat eat fish"));
+
+
+    // rexp=/fish(es).+$/
+
+
+    // console.log(rexp.test("Cat eat fishesd"));
+    // console.log(rexp.test("rat eat wheet"));
+    // console.log(rexp.test("bat eat fishessssssss"));
+
+
+    // rexp=/^\d{10}$/
+
+    // console.log(rexp.test("2345555666"));
+
+
+    //  rexp=/^[6-9]\d{9}$/
+
+    //  console.log(rexp.test("6547747848"));
+
+
+    // rexp=/^([0-2]\d|3[0-1])-([0]\d|1[0-2])-(\d{4})/
+
+    // console.log(rexp.test("22-09-2002"));
+    
+
+   
+    
+
+
+     
