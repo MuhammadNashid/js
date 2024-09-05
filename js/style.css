@@ -83,11 +83,20 @@ body{
     border: none;
     border-radius: 10px;
     color: aliceblue;
-    background-color: black;
     
 }
-#date{
-    width: 50px;
-    height: 20px;
-    margin: 40px;
+/* #user{
+    width: 200px;
+    height: 30px;
+    margin: 30px;
+    border: none;
+    border-radius: 9px;
+} */
+
+#paswrd{
+    border:none;
+    border-radius: 30px;
+    background-color: brown;
+    color: aliceblue;
+    
 }

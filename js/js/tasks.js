@@ -151,28 +151,97 @@
 
 
         
-function dob(){
-        d=document.getElementById("Date").value
-const dt=/^([0-2]\d|3[0-1])-([0]\d|1[0-2])-(\d{4})/  
-output=dt.test(d)
-str=``
-if(output){
-        str+=`
-        <h4>Date:${d}</h4>`
-        console.log("Succecfull");
+// function dob(){
+//         d=document.getElementById("Date").value
+// const dt=/^([0-2]\d|3[0-1])-([0]\d|1[0-2])-(\d{4})/  
+// output=dt.test(d)
+// str=``
+// if(output){
+//         str+=`
+//         <h4>${d}</h4>`
+//         console.log("Succecfull");
         
-}else{
-        str+=`
-        <h4>Enter Date in corret format</h4>
-        `
-        console.log("Not Succecfull");
+// }else{
+//         str+=`
+//         <h4>Enter Data or Correct Date</h4>
+//         `
         
-}
-document.getElementById("data").innerHTML=str
-document.getElementById("Date").value=""
+// }
+// document.getElementById("data").innerHTML=str
+// document.getElementById("Date").value=""
 
-}
+// }
 
 
       
+// function username(){
+//         x=document.getElementById("user").value
+// const user=/^[a-zA-Z]{4,}$/
+// ot=user.test(x)
+// str=``
+
+// if(ot){
+//         str+=`
+//         <h4>Name:${x}</h4><br>Successful
+//         `     
+// }else{
+//         str+=`
+//         <h4>Invalid username</h4>`     
+// }
+// document.getElementById("data").innerHTML=str
+// document.getElementById("user").value=""
+
+// }
+
+
+// function passwrd(){
+//         pass=document.getElementById("paswrd").value
+// const paswrd=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d){8,}/
+// password=paswrd.test(pass)
+// str=``
+
+// if(password){
+//         str+=`
+//         <h4>:${pass}</h4><br>Successful
+//         `     
+// }else{
+//         str+=`
+//         <h4>Invalid Password</h4>`     
+// }
+// document.getElementById("data").innerHTML=str
+// document.getElementById("paswrd").value=""
+// }
+
+
+
+function email(){
+        mail=document.getElementById("email").value
+const emil= /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+b=emil.test(mail)
+str=``
+
+if(b){
+        str+=`
+        <span>:${mail}</span><br>Successful
+        `     
+}else{
+        str+=`
+        <span>Invalid E-mail</span>`     
+}
+document.getElementById("data").innerHTML=str
+document.getElementById("email").value=""
+}
+
+
+
+
+
+
+
+
+
+
+// const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+
+        
 
