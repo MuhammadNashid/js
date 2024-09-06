@@ -222,7 +222,7 @@ str=``
 
 if(b){
         str+=`
-        <span>:${mail}</span><br>Successful
+        <span>${mail}</span><br>Successful
         `     
 }else{
         str+=`
